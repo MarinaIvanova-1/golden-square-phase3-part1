@@ -15,7 +15,7 @@ RSpec.describe do
    end
  
    it "can lock the unlocked diary" do
-    my_diary = double :fake_diary
+     my_diary = double :fake_diary
      my_secret_diary = SecretDiary.new(my_diary)
      my_secret_diary.unlock
      my_secret_diary.lock
